@@ -180,3 +180,11 @@ Atau gunakan file lokal:
   <p>Framework ringan buatan Khairy.</p>
 </div>
 ```
+
+## Cara Mendownload 
+
+Jalankan Kode Ini Ke Terminal Kalian:
+
+```bash
+git clone https://github.com/KhairyK/kryt-framework.git
+```
