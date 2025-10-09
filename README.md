@@ -1,5 +1,3 @@
-
-````markdown
 # KYRT Framework
 
 **Write Less, Style More.**  
@@ -23,8 +21,8 @@ Kamu bisa pakai KYRT dengan dua cara:
 
 ### 1. CDN
 ```html
-<link rel="stylesheet" href="https://kyrt.my.id/kyrt.css">
-````
+<link rel="stylesheet" href="https://phpin.kesug.com/kryt/kyrt.min.css">
+<script src="https://phpin.kesug.com/kyrt/js/kyrt-bundle.min.js">
 
 ### 2. Download Manual
 
@@ -37,7 +35,7 @@ git clone https://github.com/KhairyK/kyrt-framework.git
 Lalu import ke dalam HTML kamu:
 
 ```html
-<link rel="stylesheet" href="./kyrt.css">
+<link rel="stylesheet" href="./kyrt.min.css">
 ```
 
 ---
