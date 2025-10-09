@@ -1,0 +1,19 @@
+{
+  "name": "kyrt-framework",
+  "version": "1.1.0",
+  "description": "KYRT Framework CSS yang bakal rame",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "kyrt',
+    "framework"
+  ],
+  "author": "Sholehuddin Khairy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
