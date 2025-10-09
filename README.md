@@ -23,7 +23,7 @@ Kamu bisa pakai KYRT dengan dua cara:
 ```html
 <link rel="stylesheet" href="https://phpin.kesug.com/kryt/kyrt.min.css">
 <script src="https://phpin.kesug.com/kyrt/js/kyrt-bundle.min.js">
-
+```
 ### 2. Download Manual
 
 Clone repositori ini dan tambahkan file CSS-nya:
