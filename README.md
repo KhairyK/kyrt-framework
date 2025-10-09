@@ -130,3 +130,8 @@ Silakan buat **issue** jika kamu menemukan bug atau ide fitur baru di:
 ---
 
 © 2025 KYRT Framework — *Made with 💙 by Khairy*
+
+---
+
+*NOTE:* Jika Website https://kyrt.md.id/ sudah ada, maka CDN nya akan dipindahkan ke website itu
+
