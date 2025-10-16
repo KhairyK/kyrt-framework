@@ -1,9 +1,13 @@
 # KYRT Framework
 
 Nama: KYRT-Framework
+
 Versi: v1.0
+
 Dibuat Oleh: PHPin Labs
+
 Lisensi: sPHPin A1 LISENCE
+
 Deskripsi: **Ini Adalah Framework Yang Dibuat Untuk Membuat Semua Website Lebih Bergaya Dan Framework Ini Bebas Digunakan.**
 
 ---
