@@ -32,7 +32,7 @@ Pencet Tombol Code Dan Klik *Download ZIP* Dan Tunggu Selesai Menginstall
 
 ## Cara Menggunakan KYRT Framework ini
 
-> Kalian Harus Ke Website Dokumentasi Nya [Disini}(https://kyrt.my.id/docs/how-to-use-kyrt-framework)
+> Kalian Harus Ke Website Dokumentasi Nya [Disini](https://kyrt.my.id/docs/how-to-use-kyrt-framework)
 
 
 
