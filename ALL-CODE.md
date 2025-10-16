@@ -1,416 +1,197 @@
-## 🧱 1. Root Variables (`:root{...}`)
-
-Semua variabel global yang dipakai di seluruh framework kamu:
-
-```css
-:root {
-  --kyrt-primary: #007bff;
-  --kyrt-danger: #e63946;
-  --kyrt-text-white: #fff;
-  --kyrt-radius: 6px;
-  --kyrt-transition: 3s ease;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --danger: #dc3545;
-  --warning: #ffc107;
-  --info: #17a2b8;
-  --light: #f8f9fa;
-  --dark: #212529;
-  --shadow: 0 4px 20px #00000026;
-  ...
-}
-```
-
-### Fungsi:
-
-Semacam *“config pusat”* buat semua elemen.
-Kalau nanti ganti warna utama framework, tinggal ubah `--kyrt-primary`, langsung keubah semua tombol, border, dan elemen lain yang pakai variabel itu.
-
----
-
-## 🎨 2. Reset & Global Style
-
-```css
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", "Roboto", sans-serif;
-}
-```
-
-### Fungsi:
-
-Reset semua elemen agar:
-
-* Tidak ada margin/padding bawaan browser.
-* Font default jadi “Poppins / Roboto”.
-* Ukuran elemen konsisten dengan `box-sizing: border-box`.
-
----
-
-## 🔘 3. Buttons (`.button`, `.btn-*`)
-
-Kelas tombol utama KYRT.
-
-Contoh:
-
-```css
-.button {
-  display: inline-block;
-  font-weight: 600;
-  padding: 10px 18px;
-  border-radius: var(--kyrt-radius);
-  border: none;
-  cursor: pointer;
-  transition: var(--kyrt-transition);
-}
-```
-
-Lalu ada variasi:
-
-* `.btn-default` → tombol biru utama
-* `.btn-red-danger` → tombol merah error
-* `.btn-green-success` → tombol hijau sukses
-* `.btn-yellow-warning` → tombol kuning peringatan
-
-Ada juga efek `:hover`, `:active`, dan animasi `@keyframes kyrt-blink`.
-
----
-
-## 🖱️ 4. Cursor Utilities
-
-```css
-.cursor-pointer { cursor: pointer; }
-.cursor-wait { cursor: wait; }
-.cursor-not-allowed { cursor: not-allowed; }
-```
-
-### Fungsi:
-
-Utility cepat buat ganti bentuk kursor.
-
----
-
-## 📐 5. Position & Z-Index Utilities
-
-```css
-.pos-relative { position: relative; }
-.pos-absolute { position: absolute; }
-.top-0 { top: 0; }
-.left-0 { left: 0; }
-.z-100 { z-index: 100; }
-```
-
-### Fungsi:
-
-Utility positioning (buat layout cepat tanpa harus nulis CSS tambahan).
-
----
-
-## 🧩 6. Display & Flex/Grid Utilities
-
-```css
-.dis-flex { display: flex; }
-.justify-center { justify-content: center; }
-.items-center { align-items: center; }
-.grid { display: grid; gap: 1rem; }
-.grid-auto { grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); }
-```
-
-### Fungsi:
-
-Memudahkan layouting responsif (Flexbox & Grid system mirip Bootstrap).
-
----
-
-## 🅰️ 7. Text Utilities
-
-```css
-.txt-center { text-align: center; }
-.txt-bold { font-weight: 700; }
-.txt-red { color: #e53935; }
-.txt-glow { text-shadow: 0 0 6px #fffc; }
-```
-
-### Fungsi:
-
-Utility text lengkap — dari warna, gaya, ukuran, spacing, sampai efek glow/shadow.
-
----
-
-## 📦 8. Box Utilities
-
-```css
-.box-hold { width:100%; max-width:1200px; margin:auto; padding:20px; }
-.box-flat { background:#fff; border-radius:6px; padding:15px; box-shadow:0 0 2px #0001; }
-.box-float:hover { transform:translateY(-5px); }
-```
-
-### Fungsi:
-
-Untuk membuat container & card dengan mudah.
-
----
-
-## 💡 9. Animation Section (`@keyframes` + `.anim-*`)
-
-Ada **lebih dari 40 animasi** di sini 😳
-Contoh:
-
-* `fadeAppear`, `fadeDisappear`
-* `floatRise`
-* `pulseBeat`
-* `shakeFast`
-* `slideUp`, `slideDown`, `slideLeft`, `slideRight`
-* `twistIn`, `flipFront`, `zoomAppear`, dll.
-
-### Fungsi:
-
-Bisa dipanggil langsung lewat class:
-
-```html
-<div class="anim-fade-in"></div>
-<div class="anim-spin"></div>
-<div class="anim-glow"></div>
-```
-
----
-
-## 🧭 10. Navbar System
-
-```css
-.navbar {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:#0f0f10;
-  color:#fff;
-  padding:12px 24px;
-}
-.nav-menu a::after {
-  content:"";
-  position:absolute;
-  bottom:-5px;
-  height:2px;
-  background:#00d4ff;
-  transition:.3s;
-}
-```
-
-### Fungsi:
-
-Navbar responsif dengan:
-
-* `.nav-toggle` untuk menu hamburger.
-* `.nav-menu.show` aktif saat tampilan mobile.
-
----
-
-## 🔍 11. Form Components (Field & Search)
-
-```css
-.fieldline {
-  padding:10px 14px;
-  border:1px solid #cfcfcf;
-  border-radius:6px;
-  transition:.3s;
-}
-.fieldline:focus {
-  border-color:#0d6efd;
-  box-shadow:0 0 0 3px #0d6efd33;
-}
-```
-
-Ada juga varian:
-
-* `.fielddark` (tema gelap)
-* `.fielderror`, `.fieldokay`
-* `.fieldglass` (efek blur transparan)
-* `.fieldicon` (input + icon)
-* `.fielddisable` (nonaktif)
-
-Dan komponen `searchframe` untuk bar pencarian siap pakai.
-
----
-
-## 🧊 12. Icon System
-
-```css
-.icon-home {
-  background: url(/svg_icon/home-icon.svg) no-repeat center/cover;
-}
-```
-
-### Fungsi:
-
-Sistem ikon berbasis `mask` dan SVG (mirip Material Icons tapi lokal).
-
----
-
-## 🪟 13. Modal System
-
-```css
-.modal {
-  position:fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  display:flex; justify-content:center; align-items:center;
-  background:#0009; backdrop-filter:blur(6px);
-  opacity:0; visibility:hidden;
-  transition:.3s;
-}
-.modal.active {
-  opacity:1; visibility:visible;
-}
-.modal-box {
-  background:#fff; border-radius:12px; padding:25px;
-  animation:pop .3s ease;
-}
-```
-
-### Fungsi:
-
-Komponen modal siap pakai dengan animasi pop-up halus.
-
----
-
-## 🧯 14. Alerts (Belum selesai di potonganmu)
-
-Mulai dengan:
-
-```css
-.alert {
-  padding:12px 16px;
-  border-radius:8px;
-  font-weight:500;
-  animation:fadeIn .3s ease;
-}
-.alert-success { background:#d1fae5; color:#065f... }
-```
-
-### Fungsi:
-
-Notifikasi warna-warni seperti success, warning, danger, info.
-
----
-
-## ✨ Kesimpulan Struktur KYRT v1.1
-
-| Bagian     | Fungsi              | Contoh Class                      |
-| ---------- | ------------------- | --------------------------------- |
-| Root Vars  | Warna & tema global | `--kyrt-primary`                  |
-| Buttons    | Tombol interaktif   | `.btn-default`, `.btn-red-danger` |
-| Cursor     | Ubah pointer        | `.cursor-wait`                    |
-| Layout     | Posisi & grid       | `.dis-flex`, `.col-6`             |
-| Typography | Text styling        | `.txt-bold`, `.txt-center`        |
-| Box        | Container/card      | `.box-flat`, `.box-float`         |
-| Animation  | Efek visual         | `.anim-glow`, `.anim-fade-in`     |
-| Navbar     | Navigasi responsif  | `.navbar`, `.nav-toggle`          |
-| Forms      | Input siap pakai    | `.fieldline`, `.searchframe`      |
-| Modal      | Popup overlay       | `.modal.active`                   |
-| Alerts     | Notifikasi          | `.alert-success`                  |
-
-## Silakan Copy/Paste Ke File HTML Kalian Dan Jalankan
+# Dokumentasi CSS Framework Kyrt
+
+## 1. Pengantar
+Kode CSS ini adalah sebuah framework styling yang dirancang untuk mempermudah pengembangan interface web. Framework ini mendefinisikan:
+- **Variabel CSS (Custom Properties)**: Untuk mengelola warna, ukuran, dan efek yang dapat digunakan secara dinamis.
+- **Kelas Utility**: Kelas-kelas sederhana untuk styling elemen seperti tombol, teks, layout, animasi, dan komponen UI (seperti navbar, form, modal).
+- **Animasi**: Berbagai efek animasi yang dapat diterapkan pada elemen.
+- **Responsif Design**: Menggunakan media queries untuk menyesuaikan layout pada berbagai ukuran layar.
+
+Framework ini mirip dengan Tailwind CSS atau Bootstrap, tetapi lebih ringkas dan disesuaikan. Untuk menggunakan kode ini:
+- **Instalasi**: Salin kode CSS ke file `.css` (misalnya, `style.css`), lalu link-kan ke file HTML Anda:  
+  `<link rel="stylesheet" href="style.css">`.
+- **Cara Kerja**: Kelas-kelas diterapkan langsung pada elemen HTML, seperti `<div class="btn-default">Tombol</div>`.
+
+## 2. Struktur Kode
+Kode dibagi menjadi beberapa bagian utama:
+- **Root dan Variabel CSS**: Mendefinisikan variabel global di `:root`.
+- **Kelas Dasar**: Untuk elemen umum seperti tombol, cursor, positioning, display, grid, teks, box, padding, margin, dan animasi.
+- **Komponen UI**: Kelas untuk komponen seperti navbar, form (fieldline, searchframe), modal, alert, tooltip, dan tombol khusus.
+- **Animasi**: Keyframes dan kelas untuk efek animasi.
+- **Responsif**: Media queries untuk ukuran layar (misalnya, mobile dan tablet).
+- **Ekstra**: Kelas untuk warna khusus, border, dan font.
+
+## 3. Referensi Lengkap
+Berikut adalah daftar rinci dari elemen-elemen dalam kode. Saya mengelompokkannya berdasarkan kategori untuk kemudahan.
+
+### 3.1 Variabel CSS
+Variabel ini didefinisikan di `:root` dan dapat digunakan di seluruh stylesheet dengan `var(--nama-variabel)`. Ini membantu dalam menjaga konsistensi dan memudahkan perubahan global.
+
+| Nama Variabel          | Deskripsi                  | Nilai Contoh              |
+|------------------------|----------------------------|---------------------------|
+| `--kyrt-primary`       | Warna utama (biru)        | `#007bff`                |
+| `--kyrt-danger`        | Warna bahaya (merah)      | `#e63946`                |
+| `--kyrt-text-white`    | Warna teks putih          | `#fff`                   |
+| `--kyrt-radius`        | Radius border default     | `6px`                    |
+| `--kyrt-transition`    | Transisi default          | `3s ease`                |
+| `--primary`            | Warna primer (biru)       | `#007bff`                |
+| `--secondary`          | Warna sekunder (abu)      | `#6c757d`                |
+| `--success`            | Warna sukses (hijau)      | `#28a745`                |
+| `--danger`             | Warna bahaya (merah)      | `#dc3545`                |
+| `--warning`            | Warna peringatan (kuning) | `#ffc107`                |
+| `--info`               | Warna info (biru muda)    | `#17a2b8`                |
+| `--light`              | Warna latar terang        | `#f8f9fa`                |
+| `--dark`               | Warna latar gelap         | `#212529`                |
+| `--text-white`         | Warna teks putih          | `#fff`                   |
+| `--text-dark`          | Warna teks gelap          | `#111`                   |
+| `--radius`             | Radius border alternatif  | `8px`                    |
+| `--transition`         | Transisi cepat            | `.3s ease`               |
+| `--shadow`             | Bayangan default          | `0 4px 20px #00000026`   |
+| `--font-main`          | Font utama                | `Poppins, Roboto, sans-serif` |
+| `--bg-body`            | Latar belakang body       | `#fff`                   |
+| `--bg-alt`             | Latar belakang alternatif | `#f5f6f8`                |
+| `--border`             | Warna border default      | `#0000001a`              |
+| `--dark-blue`          | Warna biru gelap          | `#0a0f2c`                |
+| `--dark-blue-light`    | Biru gelap terang         | `#162152`                |
+| `--dark-blue-accent`   | Biru gelap aksen          | `#1d3eff`                |
+| `--neon-purple`        | Ungu neon                 | `#a21cff`                |
+| `--neon-purple-light`  | Ungu neon terang          | `#c084fc`                |
+| `--neon-purple-accent` | Ungu neon aksen           | `#e879f9`                |
+| `--solar-yellow`       | Kuning cerah              | `#ffdb0f`                |
+| `--solar-yellow-light` | Kuning cerah terang       | `#ffee6f`                |
+| `--solar-yellow-accent`| Kuning cerah aksen        | `#facc15`                |
+| `--glow-blue`          | Efek cahaya biru          | `0 0 15px #1d3eff99`     |
+| `--glow-purple`        | Efek cahaya ungu          | `0 0 15px #e279f999`     |
+| `--glow-yellow`        | Efek cahaya kuning        | `0 0 15px #ffdb0f99`     |
+
+**Contoh Penggunaan:**  
+`background-color: var(--kyrt-primary);` untuk mengatur warna latar biru.
+
+### 3.2 Kelas Utility
+Kelas-kelas ini untuk styling umum dan dapat dikombinasikan.
+
+- **Tombol (Button):**
+  - `.button`: Dasar untuk tombol (padding, border-radius, dll.).
+  - `.btn-default`: Tombol biru default.
+  - `.btn-red-danger`: Tombol merah untuk bahaya.
+  - `.btn-green-success`: Tombol hijau untuk sukses.
+  - `.btn-yellow-warning`: Tombol kuning untuk peringatan.
+  - `.btn-dark-blue`, `.btn-neon-purple`, `.btn-solar-yellow`: Tombol dengan warna khusus.
+  - **Contoh:** `<button class="btn-default">Klik Saya</button>`.
+
+- **Cursor:**
+  - `.cursor-pointer`, `.cursor-not-allowed`, dll.: Mengatur cursor mouse.
+  - **Contoh:** `<div class="cursor-pointer">Arahkan Kursor</div>`.
+
+- **Positioning:**
+  - `.pos-relative`, `.pos-absolute`, `.pos-fixed`, dll.
+  - `.top-0`, `.bottom-0`, `.left-0`, `.right-0`, `.pos-center`.
+  - **Contoh:** `<div class="pos-absolute top-0 left-0">Posisi Atas Kiri</div>`.
+
+- **Display dan Flexbox:**
+  - `.dis-block`, `.dis-flex`, `.dis-none`.
+  - `.flex-row`, `.flex-col`, `.justify-center`, `.items-center`.
+  - **Contoh:** `<div class="dis-flex justify-center">Elemen Tengah</div>`.
+
+- **Grid:**
+  - `.grid`: Membuat grid dasar.
+  - `.grid-auto`: Grid responsif.
+  - `.col-2`, `.col-3`, dll.: Menentukan span kolom.
+  - Responsif: `.col-lg-2` untuk layar besar, `.col-md-2` untuk medium, `.col-sm-2` untuk kecil.
+  - **Contoh:** `<div class="grid grid-auto"><div class="col-2">Kolom 2</div></div>`.
+
+- **Text Styling:**
+  - `.txt-left`, `.txt-mid`, `.txt-right`.
+  - `.txt-thin`, `.txt-bold`, `.txt-italic`.
+  - `.txt-xs`, `.txt-lg`, `.txt-red`, `.txt-white`.
+  - **Contoh:** `<p class="txt-bold txt-red">Teks Tebal Merah</p>`.
+
+- **Box dan Layout:**
+  - `.box-hold`: Container maksimal lebar.
+  - `.box-flat`, `.box-float`, `.box-light`, `.box-dark`.
+  - `.pad-mid`, `.pad-top`, `.space-bold`, `.space-auto`.
+  - **Contoh:** `<div class="box-float pad-mid">Kotak Mengambang</div>`.
+
+- **Bayangan dan Border:**
+  - `.box-shadow-sm`, `.shade-bold`.
+  - `.box-line`, `.box-edge`, `.box-round`.
+  - **Contoh:** `<div class="box-shadow-md">Elemen dengan Bayangan</div>`.
+
+### 3.3 Animasi
+Kode ini menyertakan keyframes untuk efek animasi. Kelas-kelas seperti `.anim-fade-in` menerapkan animasi tersebut.
+
+- **Keyframes Utama:**
+  - `fadeAppear`, `fadeDisappear`, `floatRise`, `pulseBeat`, `rotateSpin`, dll.
+- **Kelas Animasi:**
+  - `.anim-fade-in`: Muncul dengan fade.
+  - `.anim-spin`: Rotasi terus-menerus.
+  - `.anim-slide-up`, `.anim-blink`, `.anim-glow`.
+  - **Contoh:** `<div class="anim-fade-in">Elemen Muncul</div>`.
+
+### 3.4 Komponen UI
+- **Navbar:** `.navbar`, `.nav-brand`, `.nav-menu`. Responsif untuk mobile.
+  - **Contoh:** `<nav class="navbar">...</nav>`.
+- **Form Elements:**
+  - `.fieldline`: Input dasar.
+  - `.searchframe`: Kotak pencarian.
+  - **Contoh:** `<input class="fieldline" type="text">`.
+- **Modal:** `.modal`, `.modal-box`. Tampilkan dengan kelas `.active`.
+  - **Contoh:** `<div class="modal active">...</div>`.
+- **Alert:** `.alert-success`, `.alert-danger`.
+  - **Contoh:** `<div class="alert-success">Sukses!</div>`.
+- **Tooltip:** `.tooltip`, `.tooltip-text`.
+  - **Contoh:** `<span class="tooltip">Teks<span class="tooltip-text">Tooltip</span></span>`.
+
+### 3.5 Responsif Design
+Menggunakan media queries:
+- `@media (max-width: 1024px)`: Untuk layar besar (lg).
+- `@media (max-width: 768px)`: Untuk tablet (md).
+- `@media (max-width: 480px)`: Untuk mobile (sm).
+- **Contoh:** Kelas seperti `.col-lg-2` berubah menjadi `.col-sm-6` pada layar kecil.
+
+## 4. Contoh Penggunaan
+Berikut adalah contoh sederhana dalam HTML untuk menerapkan kode ini.
 
 ```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KYRT Framework Demo</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KhairyK/kyrt-framework/kyrt.min.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Kyrt CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ganti dengan file CSS Anda -->
 </head>
-<body class="bg-body font-arial">
-
-<!-- ===== Navbar ===== -->
-<nav class="navbar">
-  <div class="nav-brand">KYRT Demo</div>
-  <div class="nav-toggle" id="navToggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <div class="nav-menu" id="navMenu">
-    <a href="#">Beranda</a>
-    <a href="#">Fitur</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
-  </div>
-</nav>
-
-<!-- ===== Buttons ===== -->
-<section class="box-hold pad-mid">
-  <h2>Tombol</h2>
-  <button class="button btn-default">Default</button>
-  <button class="button btn-red-danger">Danger</button>
-  <button class="button btn-green-success">Success</button>
-  <button class="button btn-yellow-warning">Warning</button>
-  <button class="button btn-dark-blue">Dark Blue</button>
-  <button class="button btn-neon-purple">Neon Purple</button>
-  <button class="button btn-solar-yellow">Solar Yellow</button>
-</section>
-
-<!-- ===== Input Fields ===== -->
-<section class="box-hold pad-mid">
-  <h2>Input</h2>
-  <input class="fieldline" placeholder="Field line normal"><br><br>
-  <input class="fieldglass" placeholder="Glass effect"><br><br>
-  <input class="fielddark" placeholder="Dark input"><br><br>
-  <input class="fielderror" placeholder="Error"><br><br>
-  <input class="fieldokay" placeholder="Success">
-</section>
-
-<!-- ===== Alerts ===== -->
-<section class="box-hold pad-mid">
-  <h2>Alert</h2>
-  <div class="alert alert-success">Sukses: Operasi berhasil!</div>
-  <div class="alert alert-warning">Peringatan: Periksa input!</div>
-  <div class="alert alert-danger">Error: Terjadi kesalahan!</div>
-  <div class="alert alert-info">Info: Ini hanya informasi.</div>
-</section>
-
-<!-- ===== Tooltip ===== -->
-<section class="box-hold pad-mid">
-  <h2>Tooltip</h2>
-  <span class="tooltip">Hover aku
-    <span class="tooltip-text">Ini tooltip text!</span>
-  </span>
-</section>
-
-<!-- ===== Modal ===== -->
-<section class="box-hold pad-mid">
-  <h2>Modal</h2>
-  <button class="button btn-default" id="openModal">Buka Modal</button>
-
-  <div class="modal" id="myModal">
-    <div class="modal-box">
-      <h3>Ini Modal</h3>
-      <p>Ini konten modal menggunakan KYRT CSS.</p>
-      <button class="button btn-red-danger" id="closeModal">Tutup</button>
+<body class="bg-body">
+    <div class="box-hold">
+        <h1 class="txt-bold txt-blue">Selamat Datang di Framework Kyrt</h1>
+        
+        <!-- Tombol -->
+        <button class="btn-default anim-fade-in">Tombol Default</button>
+        
+        <!-- Grid Layout -->
+        <div class="grid grid-auto">
+            <div class="col-3 box-flat">Kolom 1</div>
+            <div class="col-3 box-flat anim-pulse">Kolom 2</div>
+        </div>
+        
+        <!-- Form -->
+        <input class="fieldline" type="text" placeholder="Masukkan teks">
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-brand">Kyrt</div>
+            <div class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </div>
+        </nav>
     </div>
-  </div>
-</section>
-
-<!-- ===== Scripts ===== -->
-<script>
-// Navbar toggle
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
-navToggle.addEventListener('click', () => {
-  navToggle.classList.toggle('active');
-  navMenu.classList.toggle('show');
-});
-
-// Modal
-const modal = document.getElementById('myModal');
-document.getElementById('openModal').onclick = () => modal.classList.add('active');
-document.getElementById('closeModal').onclick = () => modal.classList.remove('active');
-modal.onclick = (e) => { if(e.target===modal) modal.classList.remove('active'); };
-</script>
-
 </body>
 </html>
 ```
+
+## 5. Catatan Penting
+- **Kustomisasi**: Anda bisa mengubah variabel di `:root` untuk menyesuaikan tema.
+- **Kompatibilitas**: Pastikan browser mendukung CSS variables dan animasi (sebagian besar browser modern sudah support).
+- **Lisensi**: Kode ini tampaknya original; gunakan sesuai kebutuhan Anda.
+- **Peningkatan**: Jika Anda ingin menambahkan lebih banyak fitur, pertimbangkan untuk memisahkan kode menjadi modul (misalnya, file terpisah untuk animasi).
