@@ -27,7 +27,7 @@ Copy Ini Ke Command Prompt/Bash Kalian
 git clone https://github.com/KhairyK/kyrt-framework.git
 ```
 3. Download Via GitHub
-Pencet Tombol Code Dan Klik *Download ZIP* Dan Tunggu Selesai Menginstall
+Pencet Tombol Code Dan Klik ***Download ZIP*** Dan Tunggu Selesai Menginstall
 
 4. Download Via KYRT Website
 [Kesini](https://kyrt.my.id/download) Untuk Mendapatkan File Nya
@@ -36,7 +36,7 @@ Pencet Tombol Code Dan Klik *Download ZIP* Dan Tunggu Selesai Menginstall
 
 ## Cara Menggunakan KYRT Framework ini
 
-> Kalian Harus Ke Website Dokumentasi Nya [Disini](https://kyrt.my.id/docs/how-to-use-kyrt-framework.php)
+> Kalian Harus Ke Website Dokumentasi Nya [Disini](https://kyrt.my.id/docs/how-to-use-kyrt-framework)
 
 
 
