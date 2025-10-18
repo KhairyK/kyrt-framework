@@ -107,11 +107,17 @@ Any disputes arising from the application of this License shall first be resolve
 This License is created and issued by:
 
 PT. PHPin Sumatera (PHPin)
+
 Version: v1.0
+
 Date: October 18, 2025
+
 Official Contact: https://kyrt.my.id#contact
+
 Phone Number: +62 821 7783 4408
+
 Gmail: musickhairy@gmail.com
+
 Email: mtf6@kyrt.my.id
 
 
