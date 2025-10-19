@@ -62,11 +62,17 @@ Copy Ini Ke tag HTML <head> Kalian.
 > Menambahkan Positioning, Z-Index, Dan Juga Column
 
 ![License](https://img.shields.io/github/license/KhairyK/kyrt-framework)
+
 ![Stars](https://img.shields.io/github/stars/KhairyK/kyrt-freamework?style=social)
+
 ![Forks](https://img.shields.io/github/forks/KhairyK/kyrt-framework?style=social)
+
 ![Issues](https://img.shields.io/github/issues/khairyK/kyrt-freamework)
+
 ![Last Commit](https://img.shields.io/github/last-commit/KhairyK/kyrt-framework)
+
 ![NPM Version](https://img.shields.io/npm/v/kyrt-framework)
+
 ![NPM Downloads](https://img.shields.io/npm/dt/kyrt-framework)
 
 
