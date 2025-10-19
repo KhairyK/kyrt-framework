@@ -17,8 +17,8 @@ Deskripsi: **Ini Adalah Framework Yang Dibuat Untuk Membuat Semua Website Lebih 
 1. CDN Link
 Copy Ini Ke tag HTML <head> Kalian.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KhairyK/kyrt-framework/kyrt.min.css" type="text/css" media="all" />
-<script defer src="https://cdn.jsdelivr.net/gh/KhairyK/kyrt-framework/kyrt-bundle.min.js" type="application/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/kyrt-framework@1.0.12/kyrt.min.css" type="text/css" media="all" />
+<script defer src="https://cdn.jsdelivr.net/npm/kyrt-framework@1.0.12/kyrt-bundle.min.js" type="application/javascript"></script>
 ```
 
 2. Git CLI*
@@ -35,7 +35,7 @@ Pencet Tombol Code Dan Klik ***Download ZIP*** Dan Tunggu Selesai Menginstall
 5. npm
 Copy Ini Ke Command Prompt/Bash Kalian
 ```bash
-npm installinstall kyrt-framework
+npm install kyrt-framework
 ```
 
 *Note: Jika Kalian Memilih Nomor 2 Kalian Harus Mendownload Git Terlebih Dahulu [Situs Resminya](https://git-scm.com/downloads)
