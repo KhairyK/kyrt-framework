@@ -73,7 +73,14 @@ Copy Ini Ke tag HTML <head> Kalian.
 
 ![NPM Version](https://img.shields.io/npm/v/kyrt-framework)
 
-![NPM Downloads](https://img.shields.io/npm/dt/kyrt-framework)
+![NPM Downloads CSS](https://img.shields.io/npm/dt/kyrt-framework/kyrt.min.css)
 
+![NPM Downloads JS](https://img.shields.io/npm/dt/kyrt-framework/kyrt-bundle.min.js)
+
+![Build Status](https://img.shields.io/github/actions/workflow/status/KhairyK/kyrt-framework/CI.yml?branch=main)
+
+![Repo Size](https://img.shields.io/github/repo-size/KhairyK/kyrt-framework)
+
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fkyrt.my.id)
 
 
