@@ -1,6 +1,6 @@
 {
   "name": "KYRT Framework",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Framework CSS",
   "main": "kyrt-bundle.min.js",
   "type": "module",
