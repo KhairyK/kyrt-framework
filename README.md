@@ -57,8 +57,11 @@ Copy Ini Ke tag HTML <head> Kalian.
 ## CHANGELOG
 #### v1.0 (NEWEST)
 > Menambahkan -+ 5 Tombol
+> 
 > Menambahkan -+ 10 Box
+> 
 > Menambahkan Macam-Macam Display Termasuk **GRID**
+> 
 > Menambahkan Positioning, Z-Index, Dan Juga Column
 
 ![License](https://img.shields.io/github/license/KhairyK/kyrt-framework)
