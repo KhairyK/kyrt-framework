@@ -17,7 +17,7 @@ Deskripsi: **Ini Adalah Framework Yang Dibuat Untuk Membuat Semua Website Lebih 
 1. CDN Link
 Copy Ini Ke tag HTML <head> Kalian.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/kyrt-framework@1.0.12/kyrt.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kyrt-framework@1.0.12/kyrt.min.css" type="text/css" media="all" />
 <script defer src="https://cdn.jsdelivr.net/npm/kyrt-framework@1.0.12/kyrt-bundle.min.js" type="application/javascript"></script>
 ```
 
@@ -38,11 +38,28 @@ Copy Ini Ke Command Prompt/Bash Kalian
 npm install kyrt-framework
 ```
 
+6. CDN Link (GitHub)
+Copy Ini Ke tag HTML <head> Kalian.
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KhairyK/kyrt-framework@main/kyrt.min.css" type="text/css" media="all" />
+<script defer src="https://cdn.jsdelivr.net/gh/KhairyK/kyrt-framework@main/kyrt-bundle.min.js" type="application/javascript"></script>
+```
+
 *Note: Jika Kalian Memilih Nomor 2 Kalian Harus Mendownload Git Terlebih Dahulu [Situs Resminya](https://git-scm.com/downloads)
 
 ## Cara Menggunakan KYRT Framework ini
 
 > Kalian Harus Ke Website Dokumentasi Nya [Disini](https://kyrt.my.id/docs/how-to-use-kyrt-framework)
+
+## Preview KYRT Framework
+> Kalian Bisa Ke Website [Preview Ini](https://kyrt.my.id/docs/preview/demo) Untuk Melihat Langsung
+
+## CHANGELOG
+#### v1.0 (NEWEST)
+> Menambahkan -+ 5 Tombol
+> Menambahkan -+ 10 Box
+> Menambahkan Macam-Macam Display Termasuk **GRID**
+> Menambahkan Positioning, Z-Index, Dan Juga Column
 
 
 
