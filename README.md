@@ -35,7 +35,7 @@ Pencet Tombol Code Dan Klik ***Download ZIP*** Dan Tunggu Selesai Menginstall
 5. npm
 Copy Ini Ke Command Prompt/Bash Kalian
 ```bash
-NPM install kyrt-framework
+npm installinstall kyrt-framework
 ```
 
 *Note: Jika Kalian Memilih Nomor 2 Kalian Harus Mendownload Git Terlebih Dahulu [Situs Resminya](https://git-scm.com/downloads)
