@@ -1,0 +1,32 @@
+{
+  "name": "KYRT Framework",
+  "version": "1.0.0",
+  "description": "Framework CSS",
+  "main": "kyrt-bundle.min.js",
+  "type": "module",
+  "scripts": {
+    "start": "node kyrt-bundle.min.js",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "kyrt",
+    "framework",
+    "css"
+  ],
+  "author": "Sholehuddin Khairy",
+  "license": "sPHPin A1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KhairyK/kyrt-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KhairyK/kyrt-framework/issues"
+  },
+  "homepage": "https://kyrt.my.id/",
+  "dependencies": {},
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public", 
+  }
+  "style": "kyrt.min.css"
+}
