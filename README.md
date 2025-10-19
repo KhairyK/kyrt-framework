@@ -70,7 +70,7 @@ Copy Ini Ke tag HTML <head> Kalian.
 
 ![Forks](https://img.shields.io/github/forks/KhairyK/kyrt-framework?style=social)
 
-![Issues](https://img.shields.io/github/issues/KhairyK/kyrt-freamework)
+![Issues](https://img.shields.io/github/issues/KhairyK/kyrt-framework)
 
 ![Last Commit](https://img.shields.io/github/last-commit/KhairyK/kyrt-framework)
 
