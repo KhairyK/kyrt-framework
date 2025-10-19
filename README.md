@@ -32,6 +32,12 @@ Pencet Tombol Code Dan Klik ***Download ZIP*** Dan Tunggu Selesai Menginstall
 4. Download Via KYRT Website
 [Kesini](https://kyrt.my.id/download) Untuk Mendapatkan File Nya
 
+5. npm
+Copy Ini Ke Command Prompt/Bash Kalian
+```bash
+NPM install kyrt-framework
+```
+
 *Note: Jika Kalian Memilih Nomor 2 Kalian Harus Mendownload Git Terlebih Dahulu [Situs Resminya](https://git-scm.com/downloads)
 
 ## Cara Menggunakan KYRT Framework ini
