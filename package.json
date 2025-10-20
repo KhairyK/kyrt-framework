@@ -1,5 +1,5 @@
 {
-  "name": "KYRT Framework",
+  "name": "kyrt-framework",
   "version": "1.0.25",
   "description": "Framework CSS",
   "main": "kyrt-bundle.min.js",
