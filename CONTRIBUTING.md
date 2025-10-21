@@ -12,7 +12,7 @@ We welcome all kinds of contributions — bug reports, ideas, code improvements,
 Fork the repository and clone it to your local machine:
 
 ```bash
-git clone https://github.com/<your-username>/kyrt.git
+git clone https://github.com/KhairyK/kyrt-framework.git
 ```
 
 ### 2. Create a Branch
