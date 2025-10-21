@@ -64,6 +64,12 @@ Copy Ini Ke tag HTML <head> Kalian.
 > 
 > Menambahkan Positioning, Z-Index, Dan Juga Column
 
+---
+
+## KYRT BADGE
+
+---
+
 ![License](https://img.shields.io/github/license/KhairyK/kyrt-framework)
 
 ![Stars](https://img.shields.io/github/stars/KhairyK/kyrt-freamework?style=social)
@@ -81,5 +87,7 @@ Copy Ini Ke tag HTML <head> Kalian.
 ![Repo Size](https://img.shields.io/github/repo-size/KhairyK/kyrt-framework)
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fkyrt.my.id)
+
+[![](https://data.jsdelivr.com/v1/package/npm/kyrt-framework/badge)](https://www.jsdelivr.com/package/npm/kyrt-framework)
 
 
