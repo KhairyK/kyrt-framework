@@ -1,9 +1,10 @@
 {
   "name": "kyrt-framework",
-  "version": "1.0.25",
+  "version": "2.0.0",
   "description": "Framework CSS",
   "main": "kyrt-bundle.min.js",
   "type": "module",
+  "style": "kyrt.min.css",
   "scripts": {
     "start": "node kyrt-bundle.min.js",
     "test": "echo \"No test specified\" && exit 0"
@@ -28,5 +29,4 @@
   "publishConfig": {
     "access": "public"
   },
-  "style": "kyrt.min.css"
 }
