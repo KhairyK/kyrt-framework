@@ -55,7 +55,16 @@ Copy Ini Ke tag HTML <head> Kalian.
 > Kalian Bisa Ke Website [Preview Ini](https://kyrt.my.id/docs/preview/demo) Untuk Melihat Langsung
 
 ## CHANGELOG
-#### v1.0 (NEWEST)
+
+#### v2.0
+> Menambahkan 10 Warna
+> Menambahkan 2 Footer Style
+> Menambahkan 5 Box Gradient
+> Menambahkan 10 Width Dan Height Set
+> Menambahkan 6 Font Terbaru
+> Menambahkan 3 Image Settings
+
+#### v1.0
 > Menambahkan -+ 5 Tombol
 > 
 > Menambahkan -+ 10 Box
