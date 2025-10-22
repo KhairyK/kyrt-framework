@@ -2,7 +2,7 @@
 
 Nama: KYRT-Framework
 
-Versi: v1.0
+Versi: v2
 
 Dibuat Oleh: PHPin Labs
 
@@ -52,7 +52,7 @@ Copy Ini Ke tag HTML <head> Kalian.
 > Kalian Harus Ke Website Dokumentasi Nya [Disini](https://kyrt.my.id/docs/how-to-use-kyrt-framework)
 
 ## Preview KYRT Framework
-> Kalian Bisa Ke Website [Preview Ini](https://kyrt.my.id/docs/preview/demo) Untuk Melihat Langsung
+> Kalian Bisa Ke Website [Preview Ini](https://kyrt.my.id/preview) Untuk Melihat Langsung
 
 ## CHANGELOG
 
