@@ -66,11 +66,8 @@ Copy Ini Ke tag HTML <head> Kalian.
 
 #### v1.0
 > Menambahkan -+ 5 Tombol
-> 
 > Menambahkan -+ 10 Box
-> 
 > Menambahkan Macam-Macam Display Termasuk **GRID**
-> 
 > Menambahkan Positioning, Z-Index, Dan Juga Column
 
 ---
@@ -81,7 +78,7 @@ Copy Ini Ke tag HTML <head> Kalian.
 
 ![License](https://img.shields.io/github/license/KhairyK/kyrt-framework)
 
-![Stars](https://img.shields.io/github/stars/KhairyK/kyrt-freamework?style=social)
+![Stars](https://img.shields.io/github/stars/KhairyK/kyrt-framework?style=social)
 
 ![Forks](https://img.shields.io/github/forks/KhairyK/kyrt-framework?style=social)
 
