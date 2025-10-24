@@ -8,9 +8,7 @@ Kode CSS ini adalah sebuah framework styling yang dirancang untuk mempermudah pe
 - **Responsif Design**: Menggunakan media queries untuk menyesuaikan layout pada berbagai ukuran layar.
 
 Framework ini mirip dengan Tailwind CSS atau Bootstrap, tetapi lebih ringkas dan disesuaikan. Untuk menggunakan kode ini:
-- **Instalasi**: Salin kode CSS ke file `.css` (misalnya, `style.css`), lalu link-kan ke file HTML Anda:  
-  `<link rel="stylesheet" href="style.css">`.
-- **Cara Kerja**: Kelas-kelas diterapkan langsung pada elemen HTML, seperti `<div class="btn-default">Tombol</div>`.
+- **Cara Kerja**: Kelas-kelas diterapkan langsung pada elemen HTML, seperti `<div class="button btn-default">Tombol</div>`.
 
 ## 2. Struktur Kode
 Kode dibagi menjadi beberapa bagian utama:
@@ -159,14 +157,14 @@ Berikut adalah contoh sederhana dalam HTML untuk menerapkan kode ini.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contoh Kyrt CSS</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ganti dengan file CSS Anda -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kyrt-framework/kyrt.min.css">
 </head>
 <body class="bg-body">
     <div class="box-hold">
         <h1 class="txt-bold txt-blue">Selamat Datang di Framework Kyrt</h1>
         
         <!-- Tombol -->
-        <button class="btn-default anim-fade-in">Tombol Default</button>
+        <button class="button btn-default anim-fade-in">Tombol Default</button>
         
         <!-- Grid Layout -->
         <div class="grid grid-auto">
@@ -186,6 +184,8 @@ Berikut adalah contoh sederhana dalam HTML untuk menerapkan kode ini.
             </div>
         </nav>
     </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/kyrt-framework/kyrt-bundle.min.js"></script>
+    <!-- Usahakan Pilih Yang `.min` -->
 </body>
 </html>
 ```
@@ -193,5 +193,5 @@ Berikut adalah contoh sederhana dalam HTML untuk menerapkan kode ini.
 ## 5. Catatan Penting
 - **Kustomisasi**: Anda bisa mengubah variabel di `:root` untuk menyesuaikan tema.
 - **Kompatibilitas**: Pastikan browser mendukung CSS variables dan animasi (sebagian besar browser modern sudah support).
-- **Lisensi**: Kode ini tampaknya original; gunakan sesuai kebutuhan Anda.
-- **Peningkatan**: Jika Anda ingin menambahkan lebih banyak fitur, pertimbangkan untuk memisahkan kode menjadi modul (misalnya, file terpisah untuk animasi).
+- **Lisensi**: Kode ini memakai lisensi sPHPin A1; gunakan sesuai kebutuhan Anda.
+
